@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head><title>Hangman Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' id='global-css' href='./resources/css/bootstrap.css'>
+</head>
+
+<br>
+<h1>Hangman</h1>
+<br>
+<body>
+  <div class="row" id="textholder" style="display: inline;">
+    <div class="container-fluid">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Player 1: Enter Word" aria-label="Recipient's username" aria-describedby="basic-addon2" id="word">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="wordSubmit" onclick="submitWord()">Submit</button>
+  </div>
+</div>
+</div>
+      </div>
+    </div>
+
+<div class="row" id="imageholder" style="display: inline;">
+  <div class="container-fluid">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <img id="hangman" class="image-responsive" src="/resources/img/1.jpg">
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <class id="hangman" class="image-responsive" src="/resources/img/1.jpg">
+    </div>
+  </div>
+</div>
+
+var string = "hello"
+
+string = string.split('')
+var newstring = '';
+for(var i = 0; i < string.length; i ++){
+  newstring = newstring + '*'
+}
+console.log(newstring)
+
+
+</body>
+
+<script>
+
+function submitWord(){
+  var input = document.getElementById("word").value;
+  var textstyle = document.getElementById("textholder").style.display = 'none'
+
+}
+</script>
+
+</html>
